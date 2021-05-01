@@ -5,14 +5,11 @@ public class Main {
         Instructor instructor = new Instructor(1, "Engin", "Demiroğ", 1);
         Student student = new Student(2, "Muhammed Fatih", "Çelik", 1);
 
-        InstructorManager instructorManager = new InstructorManager();
-        instructorManager.add(instructor);
-        instructorManager.update(instructor);
-        instructorManager.delete(instructor);
+        User user = new User(3, "Nejla", "Çelik");
 
-        StudentManager studentManager = new StudentManager();
-        studentManager.add(student);
-        studentManager.update(student);
-        studentManager.delete(student);
+        UserManager userManager = new UserManager();
+        userManager.Add(instructor);
+        userManager.Add(student);
+        userManager.Add(user);
     }
 }

@@ -4,9 +4,15 @@ public class Student extends User{
     int studentId;
 
     public Student(int id, String name, String surname, int studentId){
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
+        super(id,name,surname);
+        this.studentId = studentId;
+    }
+
+    public int getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(int studentId) {
         this.studentId = studentId;
     }
 }
